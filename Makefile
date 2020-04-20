@@ -136,6 +136,7 @@ wl-objs            += src/shared/linux_osl.o
 wl-objs            += src/wl/sys/wl_linux.o
 wl-objs            += src/wl/sys/wl_iw.o
 wl-objs            += src/wl/sys/wl_cfg80211_hybrid.o
+wl-objs            += src/wl/sys/wl_iperf_timestamp.o
 
 EXTRA_CFLAGS       += -I$(src)/src/include -I$(src)/src/common/include
 EXTRA_CFLAGS       += -I$(src)/src/wl/sys -I$(src)/src/wl/phy -I$(src)/src/wl/ppr/include

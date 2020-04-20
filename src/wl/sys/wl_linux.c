@@ -73,6 +73,8 @@
 #error "No support for Kernel Rev <= 2.4.5, As the older kernel revs doesn't support Tasklets"
 #endif
 
+#include <wl_iperf_timestamp.h>
+
 #include <wlc_pub.h>
 #include <wl_dbg.h>
 #include <wlc_ethereal.h>
@@ -1159,6 +1161,8 @@ wl_start_int(wl_info_t *wl, wl_if_t *wlif, struct sk_buff *skb)
 
 	WL_TRACE(("wl%d: wl_start: len %d data_len %d summed %d csum: 0x%x\n",
 		wl->pub->unit, skb->len, skb->data_len, skb->ip_summed, (uint32)skb->csum));
+
+    wl_create_timestamp(PACKET_ARRIVAL, skb);
 
 	WL_LOCK(wl);
 

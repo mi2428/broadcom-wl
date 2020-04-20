@@ -1,4 +1,4 @@
-cmd_/home/lain/broadcom-wl/src/wl/sys/wl_cfg80211_hybrid.o := gcc -Wp,-MD,/home/lain/broadcom-wl/src/wl/sys/.wl_cfg80211_hybrid.o.d  -nostdinc -isystem /usr/lib/gcc/x86_64-linux-gnu/9/include  -I./arch/x86/include -I./arch/x86/include/generated  -I./include -I./arch/x86/include/uapi -I./arch/x86/include/generated/uapi -I./include/uapi -I./include/generated/uapi -include ./include/linux/kconfig.h -Iubuntu/include  -include ./include/linux/compiler_types.h -D__KERNEL__ -Wall -Wundef -Werror=strict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -fshort-wchar -fno-PIE -Werror=implicit-function-declaration -Werror=implicit-int -Wno-format-security -std=gnu89 -mno-sse -mno-mmx -mno-sse2 -mno-3dnow -mno-avx -m64 -falign-jumps=1 -falign-loops=1 -mno-80387 -mno-fp-ret-in-387 -mpreferred-stack-boundary=3 -mskip-rax-setup -mtune=generic -mno-red-zone -mcmodel=kernel -DCONFIG_X86_X32_ABI -DCONFIG_AS_CFI=1 -DCONFIG_AS_CFI_SIGNAL_FRAME=1 -DCONFIG_AS_CFI_SECTIONS=1 -DCONFIG_AS_SSSE3=1 -DCONFIG_AS_AVX=1 -DCONFIG_AS_AVX2=1 -DCONFIG_AS_AVX512=1 -DCONFIG_AS_SHA1_NI=1 -DCONFIG_AS_SHA256_NI=1 -Wno-sign-compare -fno-asynchronous-unwind-tables -mindirect-branch=thunk-extern -mindirect-branch-register -fno-jump-tables -fno-delete-null-pointer-checks -Wno-frame-address -Wno-format-truncation -Wno-format-overflow -Wno-address-of-packed-member -O2 --param=allow-store-data-races=0 -Wframe-larger-than=1024 -fstack-protector-strong -Wno-unused-but-set-variable -Wno-unused-const-variable -fno-omit-frame-pointer -fno-optimize-sibling-calls -fno-var-tracking-assignments -pg -mrecord-mcount -mfentry -DCC_USING_FENTRY -flive-patching=inline-clone -Wdeclaration-after-statement -Wimplicit-fallthrough -Wvla -Wno-pointer-sign -Wno-stringop-truncation -fno-strict-overflow -fno-merge-all-constants -fmerge-constants -fno-stack-check -fconserve-stack -Werror=date-time -Werror=incompatible-pointer-types -Werror=designated-init -fmacro-prefix-map=./= -fcf-protection=none -Wno-packed-not-aligned -DUSE_CFG80211 -I/home/lain/broadcom-wl/src/include -I/home/lain/broadcom-wl/src/common/include -I/home/lain/broadcom-wl/src/wl/sys -I/home/lain/broadcom-wl/src/wl/phy -I/home/lain/broadcom-wl/src/wl/ppr/include -I/home/lain/broadcom-wl/src/shared/bcmwifi/include -Wno-date-time  -DMODULE  -DKBUILD_BASENAME='"wl_cfg80211_hybrid"' -DKBUILD_MODNAME='"wl"' -c -o /home/lain/broadcom-wl/src/wl/sys/wl_cfg80211_hybrid.o /home/lain/broadcom-wl/src/wl/sys/wl_cfg80211_hybrid.c
+cmd_/home/lain/broadcom-wl/src/wl/sys/wl_cfg80211_hybrid.o := gcc -Wp,-MD,/home/lain/broadcom-wl/src/wl/sys/.wl_cfg80211_hybrid.o.d  -nostdinc -isystem /usr/lib/gcc/x86_64-linux-gnu/9/include  -I./arch/x86/include -I./arch/x86/include/generated  -I./include -I./arch/x86/include/uapi -I./arch/x86/include/generated/uapi -I./include/uapi -I./include/generated/uapi -include ./include/linux/kconfig.h -Iubuntu/include  -include ./include/linux/compiler_types.h -D__KERNEL__ -Wall -Wundef -Werror=strict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -fshort-wchar -fno-PIE -Werror=implicit-function-declaration -Werror=implicit-int -Wno-format-security -std=gnu89 -mno-sse -mno-mmx -mno-sse2 -mno-3dnow -mno-avx -m64 -falign-jumps=1 -falign-loops=1 -mno-80387 -mno-fp-ret-in-387 -mpreferred-stack-boundary=3 -mskip-rax-setup -mtune=generic -mno-red-zone -mcmodel=kernel -DCONFIG_X86_X32_ABI -DCONFIG_AS_CFI=1 -DCONFIG_AS_CFI_SIGNAL_FRAME=1 -DCONFIG_AS_CFI_SECTIONS=1 -DCONFIG_AS_SSSE3=1 -DCONFIG_AS_AVX=1 -DCONFIG_AS_AVX2=1 -DCONFIG_AS_AVX512=1 -DCONFIG_AS_SHA1_NI=1 -DCONFIG_AS_SHA256_NI=1 -Wno-sign-compare -fno-asynchronous-unwind-tables -mindirect-branch=thunk-extern -mindirect-branch-register -fno-jump-tables -fno-delete-null-pointer-checks -Wno-frame-address -Wno-format-truncation -Wno-format-overflow -Wno-address-of-packed-member -O2 --param=allow-store-data-races=0 -Wframe-larger-than=1024 -fstack-protector-strong -Wno-unused-but-set-variable -Wimplicit-fallthrough -Wno-unused-const-variable -fno-omit-frame-pointer -fno-optimize-sibling-calls -fno-var-tracking-assignments -pg -mrecord-mcount -mfentry -DCC_USING_FENTRY -flive-patching=inline-clone -Wdeclaration-after-statement -Wvla -Wno-pointer-sign -Wno-stringop-truncation -fno-strict-overflow -fno-merge-all-constants -fmerge-constants -fno-stack-check -fconserve-stack -Werror=date-time -Werror=incompatible-pointer-types -Werror=designated-init -fmacro-prefix-map=./= -fcf-protection=none -Wno-packed-not-aligned -DUSE_CFG80211 -I/home/lain/broadcom-wl/src/include -I/home/lain/broadcom-wl/src/common/include -I/home/lain/broadcom-wl/src/wl/sys -I/home/lain/broadcom-wl/src/wl/phy -I/home/lain/broadcom-wl/src/wl/ppr/include -I/home/lain/broadcom-wl/src/shared/bcmwifi/include -Wno-date-time  -DMODULE  -DKBUILD_BASENAME='"wl_cfg80211_hybrid"' -DKBUILD_MODNAME='"wl"' -c -o /home/lain/broadcom-wl/src/wl/sys/wl_cfg80211_hybrid.o /home/lain/broadcom-wl/src/wl/sys/wl_cfg80211_hybrid.c
 
 source_/home/lain/broadcom-wl/src/wl/sys/wl_cfg80211_hybrid.o := /home/lain/broadcom-wl/src/wl/sys/wl_cfg80211_hybrid.c
 
@@ -199,7 +199,6 @@ deps_/home/lain/broadcom-wl/src/wl/sys/wl_cfg80211_hybrid.o := \
     $(wildcard include/config/base/small.h) \
   include/linux/percpu-defs.h \
     $(wildcard include/config/debug/force/weak/per/cpu.h) \
-    $(wildcard include/config/virtualization.h) \
     $(wildcard include/config/amd/mem/encrypt.h) \
   include/linux/thread_info.h \
     $(wildcard include/config/thread/info/in/task.h) \
@@ -709,7 +708,6 @@ deps_/home/lain/broadcom-wl/src/wl/sys/wl_cfg80211_hybrid.o := \
     $(wildcard include/config/page/poisoning.h) \
     $(wildcard include/config/init/on/alloc/default/on.h) \
     $(wildcard include/config/init/on/free/default/on.h) \
-    $(wildcard include/config/debug/pagealloc/enable/default.h) \
     $(wildcard include/config/debug/pagealloc.h) \
     $(wildcard include/config/arch/has/set/direct/map.h) \
     $(wildcard include/config/hibernation.h) \
@@ -1120,6 +1118,7 @@ deps_/home/lain/broadcom-wl/src/wl/sys/wl_cfg80211_hybrid.o := \
   include/net/flow_dissector.h \
   include/linux/in6.h \
   include/uapi/linux/in6.h \
+  include/linux/siphash.h \
   include/uapi/linux/if_ether.h \
   include/linux/splice.h \
   include/linux/pipe_fs_i.h \
@@ -1152,7 +1151,6 @@ deps_/home/lain/broadcom-wl/src/wl/sys/wl_cfg80211_hybrid.o := \
     $(wildcard include/config/ip/mroute/multiple/tables.h) \
     $(wildcard include/config/ip/route/multipath.h) \
   include/net/inet_frag.h \
-  include/linux/siphash.h \
   include/net/netns/ipv6.h \
     $(wildcard include/config/ipv6/multiple/tables.h) \
     $(wildcard include/config/ipv6/mroute.h) \
