@@ -1162,8 +1162,6 @@ wl_start_int(wl_info_t *wl, wl_if_t *wlif, struct sk_buff *skb)
 	WL_TRACE(("wl%d: wl_start: len %d data_len %d summed %d csum: 0x%x\n",
 		wl->pub->unit, skb->len, skb->data_len, skb->ip_summed, (uint32)skb->csum));
 
-    wl_create_timestamp(PACKET_ARRIVAL, skb);
-
 	WL_LOCK(wl);
 
 	pkt = PKTFRMNATIVE(wl->osh, skb);
@@ -2054,8 +2052,8 @@ wl_sendup(wl_info_t *wl, wl_if_t *wlif, void *p, int numpkt)
 	WL_APSTA_RX(("wl%d: wl_sendup(): pkt %p summed %d on interface %p (%s)\n",
 		wl->pub->unit, p, skb->ip_summed, wlif, skb->dev->name));
 
+    wl_create_timestamp(PACKET_ARRIVAL, skb);
 	netif_rx(skb);
-
 }
 
 int
@@ -2217,6 +2215,7 @@ wl_start(struct sk_buff *skb, struct net_device *dev)
 	} else
 		return wl_start_int(wl, wlif, skb);
 
+    wl_create_timestamp(PACKET_DEPARTURE, skb);
 	return (0);
 }
 
