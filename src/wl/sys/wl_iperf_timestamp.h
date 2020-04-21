@@ -4,6 +4,8 @@
 #define WL_STAMP_ARRIVAL     0
 #define WL_STAMP_DEPARTURE   1
 
+#define IPERF_UDP_PORT       5201
+
 enum wl_stamp_location {
     PACKET_ARRIVAL,
     PACKET_DEPARTURE
