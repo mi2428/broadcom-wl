@@ -146,7 +146,7 @@ ifeq "$(GE_49)" "1"
 EXTRA_CFLAGS       += -Wno-date-time
 endif
 
-EXTRA_LDFLAGS      := $(src)/lib/wlc_hybrid.o_shipped
+# EXTRA_LDFLAGS      := $(src)/lib/wlc_hybrid.o_shipped
 
 KBASE              ?= /lib/modules/`uname -r`
 KBUILD_DIR         ?= $(KBASE)/build
