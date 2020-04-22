@@ -153,17 +153,16 @@ KBUILD_DIR         ?= $(KBASE)/build
 MDEST_DIR          ?= $(KBASE)/kernel/drivers/net/wireless
 
 # Cross compile setup.  Tool chain and kernel tree, replace with your own.
-CROSS_TOOLS        = /path/to/tools
-CROSS_KBUILD_DIR   = /path/to/kernel/tree
+#CROSS_TOOLS        = /home/lain/raspberrypi/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin/arm-linux-gnueabihf-
+CROSS_TOOLS        = /home/lain/raspberrypi/tools/arm-bcm2708/arm-rpi-4.9.3-linux-gnueabihf/bin/arm-linux-gnueabihf-
+CROSS_KBUILD_DIR   = /home/lain/raspberrypi/linux
 
 all:
 	KBUILD_NOPEDANTIC=1 make -C $(KBUILD_DIR) M=`pwd`
 
 cross:
-	KBUILD_NOPEDANTIC=1 make CROSS_COMPILE=${CROSS_TOOLS} -C $(CROSS_KBUILD_DIR) M=`pwd`
+	KBUILD_NOPEDANTIC=1 make ARCH=arm CROSS_COMPILE=${CROSS_TOOLS} -C $(CROSS_KBUILD_DIR) M=`pwd`
 
 clean:
 	KBUILD_NOPEDANTIC=1 make -C $(KBUILD_DIR) M=`pwd` clean
 
-install:
-	install -D -m 755 wl.ko $(MDEST_DIR)
