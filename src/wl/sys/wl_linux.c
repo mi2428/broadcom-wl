@@ -164,7 +164,8 @@ static int wl_set_radio_block(void *data, bool blocked);
 static void wl_report_radio_state(wl_info_t *wl);
 #endif
 
-MODULE_LICENSE("MIXED/Proprietary");
+// MODULE_LICENSE("MIXED/Proprietary");
+MODULE_LICENSE("GPL");
 
 static struct pci_device_id wl_id_table[] =
 {
@@ -566,7 +567,7 @@ wl_attach(uint16 vendor, uint16 device, ulong regs,
 		return NULL;
 	}
 
-	dev = wlif->dev;
+    dev = wlif->dev;
 	wl->dev = dev;
 	wl_if_setup(dev);
 
