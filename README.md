@@ -1,5 +1,4 @@
 **This driver is customized for my research project and should not be used for other purposes.**
-
 This repository is based on version [a9362f4](https://github.com/antoineco/broadcom-wl/tree/a9362f4e4416d8e842b976fd243445711363ec24) from [antoineco/broadcom-wl](https://github.com/antoineco/broadcom-wl).
 Thanks [@antoineco](https://github.com/antoineco) for code sharing.
 
