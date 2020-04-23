@@ -141,21 +141,20 @@ wl-objs            += src/wl/sys/wl_iperf_timestamp.o
 EXTRA_CFLAGS       += -I$(src)/src/include -I$(src)/src/common/include
 EXTRA_CFLAGS       += -I$(src)/src/wl/sys -I$(src)/src/wl/phy -I$(src)/src/wl/ppr/include
 EXTRA_CFLAGS       += -I$(src)/src/shared/bcmwifi/include
-#EXTRA_CFLAGS       += -DBCMDBG_ASSERT -DBCMDBG_ERR
+EXTRA_CFLAGS       += -DBCMDBG_ASSERT -DBCMDBG_ERR
 ifeq "$(GE_49)" "1"
 EXTRA_CFLAGS       += -Wno-date-time
 endif
 
-# EXTRA_LDFLAGS      := $(src)/lib/wlc_hybrid.o_shipped
+EXTRA_LDFLAGS      := $(src)/lib/wlc_hybrid.o_shipped
 
 KBASE              ?= /lib/modules/`uname -r`
 KBUILD_DIR         ?= $(KBASE)/build
 MDEST_DIR          ?= $(KBASE)/kernel/drivers/net/wireless
 
 # Cross compile setup.  Tool chain and kernel tree, replace with your own.
-#CROSS_TOOLS        = /home/lain/raspberrypi/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin/arm-linux-gnueabihf-
-CROSS_TOOLS        = /home/lain/raspberrypi/tools/arm-bcm2708/arm-rpi-4.9.3-linux-gnueabihf/bin/arm-linux-gnueabihf-
-CROSS_KBUILD_DIR   = /home/lain/raspberrypi/linux
+CROSS_TOOLS        =
+CROSS_KBUILD_DIR   =
 
 all:
 	KBUILD_NOPEDANTIC=1 make -C $(KBUILD_DIR) M=`pwd`
